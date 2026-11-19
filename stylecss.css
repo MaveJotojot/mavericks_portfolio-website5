@@ -1,4 +1,3 @@
-
 /* GENERAL SETTINGS */
 * {
     margin: 0;
@@ -9,18 +8,18 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #070b14;
+    background: #0a0a0a;
     color: #ffffff;
     line-height: 1.7;
 }
 
 /* NAVIGATION */
 header {
-    background: #0b1220;
+    background: #140b0b;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid #1e293b;
+    border-bottom: 1px solid #3a1717;
 }
 
 .navbar {
@@ -40,7 +39,7 @@ header {
 .logo span,
 .section-title span,
 .home-content h1 span {
-    color: #38bdf8;
+    color: #ff3b3b;
 }
 
 .nav-links {
@@ -57,7 +56,7 @@ header {
 }
 
 .nav-links a:hover {
-    color: #38bdf8;
+    color: #ff3b3b;
 }
 
 /* HOME SECTION */
@@ -78,7 +77,7 @@ header {
 }
 
 .welcome {
-    color: #38bdf8;
+    color: #ff3b3b;
     letter-spacing: 3px;
     font-size: 12px;
     font-weight: bold;
@@ -93,18 +92,18 @@ header {
 
 .home-content h2 {
     font-size: 21px;
-    color: #7dd3fc;
+    color: #ff8a8a;
     margin-bottom: 20px;
 }
 
 .home-content p:not(.welcome) {
-    color: #b6c2d1;
+    color: #c2b5b5;
     margin-bottom: 30px;
 }
 
 .btn {
     display: inline-block;
-    background: #0ea5e9;
+    background: #ff3030;
     color: white;
     text-decoration: none;
     padding: 12px 25px;
@@ -113,7 +112,7 @@ header {
 }
 
 .btn:hover {
-    background: #0284c7;
+    background: #cc2020;
     transform: translateY(-3px);
 }
 
@@ -127,8 +126,8 @@ header {
     height: 380px;
     object-fit: cover;
     border-radius: 20px;
-    border: 3px solid #0ea5e9;
-    box-shadow: 0 0 35px #0ea5e933;
+    border: 3px solid #ff3030;
+    box-shadow: 0 0 35px #ff303033;
 }
 
 /* GENERAL SECTIONS */
@@ -138,7 +137,7 @@ header {
 }
 
 .dark-section {
-    background: #0d1626;
+    background: #160c0c;
 }
 
 .section-title {
@@ -146,7 +145,7 @@ header {
 }
 
 .section-title p {
-    color: #38bdf8;
+    color: #ff3b3b;
     font-size: 12px;
     letter-spacing: 3px;
     font-weight: bold;
@@ -161,20 +160,20 @@ header {
 .about-content {
     max-width: 750px;
     margin: auto;
-    background: #101b2d;
+    background: #1d1010;
     padding: 35px;
-    border: 1px solid #23344d;
+    border: 1px solid #492020;
     border-radius: 12px;
 }
 
 .about-content h3 {
-    color: #7dd3fc;
+    color: #ff8a8a;
     margin-bottom: 15px;
     font-size: 22px;
 }
 
 .about-content p {
-    color: #b6c2d1;
+    color: #c2b5b5;
 }
 
 /* SKILLS */
@@ -188,8 +187,8 @@ header {
 }
 
 .skill-card {
-    background: #142238;
-    border: 1px solid #23344d;
+    background: #241313;
+    border: 1px solid #492020;
     border-radius: 12px;
     padding: 30px 20px;
     transition: 0.3s;
@@ -198,16 +197,16 @@ header {
 .skill-card:hover,
 .project-card:hover {
     transform: translateY(-8px);
-    border-color: #0ea5e9;
+    border-color: #ff3030;
 }
 
 .skill-card h3 {
-    color: #7dd3fc;
+    color: #ff8a8a;
     margin-bottom: 12px;
 }
 
 .skill-card p {
-    color: #b6c2d1;
+    color: #c2b5b5;
     font-size: 14px;
 }
 
@@ -217,8 +216,8 @@ header {
 }
 
 .project-card {
-    background: #101b2d;
-    border: 1px solid #23344d;
+    background: #1d1010;
+    border: 1px solid #492020;
     border-radius: 12px;
     padding: 30px;
     text-align: left;
@@ -226,7 +225,7 @@ header {
 }
 
 .project-number {
-    color: #38bdf8;
+    color: #ff3b3b;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -237,14 +236,14 @@ header {
 }
 
 .project-card p {
-    color: #b6c2d1;
+    color: #c2b5b5;
     font-size: 14px;
     margin-bottom: 20px;
 }
 
 .project-card span {
-    color: #7dd3fc;
-    background: #082f49;
+    color: #ff8a8a;
+    background: #3b1515;
     padding: 6px 12px;
     border-radius: 5px;
     font-size: 12px;
@@ -255,19 +254,19 @@ header {
     max-width: 700px;
     margin: auto;
     padding: 35px;
-    border-left: 4px solid #0ea5e9;
-    background: #142238;
+    border-left: 4px solid #ff3030;
+    background: #241313;
     text-align: left;
     border-radius: 8px;
 }
 
 .education-card h3 {
-    color: #7dd3fc;
+    color: #ff8a8a;
     margin-bottom: 10px;
 }
 
 .education-card p {
-    color: #b6c2d1;
+    color: #c2b5b5;
 }
 
 /* CONTACT */
@@ -277,20 +276,20 @@ header {
 }
 
 .contact-content p {
-    color: #b6c2d1;
+    color: #c2b5b5;
     margin-bottom: 25px;
 }
 
 /* FOOTER */
 footer {
-    background: #050912;
+    background: #080505;
     text-align: center;
     padding: 25px;
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid #3a1717;
 }
 
 footer p {
-    color: #8795a8;
+    color: #9b8585;
     font-size: 13px;
 }
 
@@ -365,4 +364,4 @@ footer p {
     .section {
         padding: 65px 20px;
     }
-}
+    }
