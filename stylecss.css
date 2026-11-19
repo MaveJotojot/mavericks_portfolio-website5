@@ -1,90 +1,160 @@
+
+/* ===== GENERAL STYLE ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #071b33;
+    background: #031b30;
+    color: #d8f3ff;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
-.container {
-    text-align: center;
-    padding: 50px;
-    border-radius: 20px;
-    background: #102d4d;
-    box-shadow: 0 0 30px #4db8ff;
-    animation: fadeIn 2s ease;
+/* ===== HEADINGS ===== */
+h1, h2, h3 {
+    color: #7ddcff;
+    text-shadow: 0 0 10px #38bdf8,
+                 0 0 20px #38bdf8;
+    transition: 0.4s ease;
 }
 
-h1 {
-    color: #87cefa;
-    font-size: 40px;
-    animation: glow 2s infinite alternate;
+h1:hover, h2:hover, h3:hover {
+    color: #ffffff;
+    text-shadow: 0 0 15px #38bdf8,
+                 0 0 30px #38bdf8;
 }
 
+/* ===== PARAGRAPHS ===== */
 p {
-    color: #cceeff;
-    margin: 15px 0;
+    color: #c5eaff;
+    line-height: 1.7;
 }
 
+/* ===== LINKS ===== */
+a {
+    color: #67d5ff;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 12px #38bdf8;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 60px 8%;
+    animation: fadeUp 1s ease both;
+}
+
+/* ===== CARDS ===== */
+.card, .project-card, .skill-card {
+    background: #082b47;
+    border: 1px solid #38bdf8;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px #38bdf833;
+    transition: 0.4s ease;
+}
+
+.card:hover,
+.project-card:hover,
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #38bdf8,
+                0 0 30px #38bdf866;
+}
+
+/* ===== BUTTONS ===== */
 button {
-    padding: 12px 30px;
+    background: #38bdf8;
+    color: #031b30;
     border: none;
+    padding: 12px 25px;
     border-radius: 25px;
-    background: #66ccff;
-    color: #071b33;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.4s;
+    transition: 0.4s ease;
 }
 
 button:hover {
-    background: white;
-    box-shadow: 0 0 20px #66ccff;
-    transform: scale(1.1);
+    background: #ffffff;
+    box-shadow: 0 0 15px #38bdf8,
+                0 0 30px #38bdf8;
+    transform: scale(1.08);
 }
 
-.glow-circle {
-    width: 80px;
-    height: 80px;
-    background: #87cefa;
-    border-radius: 50%;
-    margin: 0 auto 25px;
-    box-shadow: 0 0 20px #66ccff;
-    animation: float 3s ease-in-out infinite;
+/* ===== PROFILE IMAGE ===== */
+img {
+    max-width: 100%;
+    transition: 0.4s ease;
 }
 
-@keyframes glow {
-    from {
-        text-shadow: 0 0 5px #66ccff;
-    }
-    to {
-        text-shadow: 0 0 25px #00bfff;
-    }
+.profile img {
+    border: 3px solid #38bdf8;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #38bdf8;
+    animation: floating 3s ease-in-out infinite;
 }
 
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
+/* ===== NAVIGATION ===== */
+nav a {
+    margin: 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
 }
 
-@keyframes fadeIn {
+nav a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 15px #38bdf8;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(40px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    section {
+        padding: 35px 5%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .container,
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .card, .project-card, .skill-card {
+        width: 100%;
     }
 }
