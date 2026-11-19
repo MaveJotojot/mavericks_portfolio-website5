@@ -6,14 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --blue: #168bdb;
-  --blue-light: #75caff;
-  --navy: #102b49;
-  --text: #15324f;
-  --muted: #55718d;
-  --glass: rgba(255, 255, 255, 0.48);
-  --glass-border: rgba(255, 255, 255, 0.72);
-  --shadow: 0 12px 35px rgba(36, 111, 170, 0.13);
+  --blue: #168bff;
+  --blue-light: #72d7ff;
+  --navy: #eaf7ff;
+  --text: #e5f4ff;
+  --muted: #b7d3e8;
+  --glass: rgba(16, 42, 73, 0.58);
+  --glass-border: rgba(105, 203, 255, 0.38);
+  --shadow: 0 12px 35px rgba(0, 145, 255, 0.16);
 }
 
 * {
@@ -28,9 +28,9 @@ body {
   color: var(--text);
   line-height: 1.7;
   background:
-    radial-gradient(circle at 12% 15%, rgba(255,255,255,.95), transparent 28%),
-    radial-gradient(circle at 85% 25%, rgba(117,202,255,.45), transparent 30%),
-    linear-gradient(135deg, #dff3ff 0%, #b8e2fb 48%, #eaf8ff 100%);
+    radial-gradient(circle at 12% 15%, rgba(0,145,255,.22), transparent 28%),
+    radial-gradient(circle at 85% 25%, rgba(0,198,255,.18), transparent 30%),
+    linear-gradient(135deg, #061629 0%, #0b2948 52%, #071b31 100%);
   background-attachment: fixed;
   overflow-x: hidden;
 }
@@ -50,10 +50,10 @@ a {
   gap: 18px;
   border: 1px solid var(--glass-border);
   border-radius: 22px;
-  background: rgba(255,255,255,.42);
+  background: rgba(13, 42, 72, .62);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow), inset 0 0 18px rgba(80,190,255,.04);
   position: sticky;
   top: 12px;
   z-index: 20;
@@ -74,14 +74,14 @@ a {
 }
 
 .nav-links a {
-  color: #294d6e;
+  color: #d6efff;
   font-size: .92rem;
   font-weight: 500;
   transition: color .2s ease;
 }
 
 .nav-links a:hover {
-  color: var(--blue);
+  color: var(--blue-light);
 }
 
 .home {
@@ -98,7 +98,7 @@ a {
   background: var(--glass);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow), inset 0 0 18px rgba(80,190,255,.04);
   overflow: hidden;
 }
 
@@ -109,7 +109,7 @@ a {
 
 .welcome {
   display: inline-block;
-  color: var(--blue);
+  color: var(--blue-light);
   font-size: .95rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -127,7 +127,7 @@ a {
 
 .home-content h1 span,
 .home-content .highlight {
-  color: var(--blue);
+  color: var(--blue-light);
 }
 
 .home-content p {
@@ -167,9 +167,9 @@ button:hover,
   width: 300px;
   height: 350px;
   padding: 12px;
-  border: 1px solid rgba(255,255,255,.85);
+  border: 1px solid rgba(105,203,255,.55);
   border-radius: 30px;
-  background: rgba(255,255,255,.38);
+  background: rgba(30, 93, 140, .38);
   box-shadow: 0 15px 35px rgba(30,110,165,.18);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -191,10 +191,10 @@ button:hover,
   padding: 55px 45px;
   border: 1px solid var(--glass-border);
   border-radius: 30px;
-  background: rgba(255,255,255,.43);
+  background: rgba(13, 42, 72, .56);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow), inset 0 0 18px rgba(80,190,255,.04);
 }
 
 .section-title {
@@ -235,8 +235,8 @@ button:hover,
 .education-card {
   padding: 25px;
   border-radius: 22px;
-  border: 1px solid rgba(255,255,255,.8);
-  background: rgba(255,255,255,.5);
+  border: 1px solid rgba(105,203,255,.35);
+  background: rgba(22, 65, 101, .55);
   box-shadow: 0 8px 24px rgba(35,105,155,.10);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -264,14 +264,14 @@ button:hover,
 }
 
 .project-number {
-  color: var(--blue);
+  color: var(--blue-light);
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 8px;
 }
 
 .dark-section {
-  background: rgba(211, 239, 255, .55);
+  background: rgba(18, 66, 105, .62);
 }
 
 .contact-content {
@@ -280,7 +280,7 @@ button:hover,
 }
 
 .contact-content a {
-  color: var(--blue);
+  color: var(--blue-light);
   font-weight: 600;
 }
 
@@ -289,10 +289,10 @@ footer {
   margin: 30px auto 20px;
   padding: 22px;
   text-align: center;
-  color: #55718d;
+  color: #b7d3e8;
   border: 1px solid var(--glass-border);
   border-radius: 20px;
-  background: rgba(255,255,255,.4);
+  background: rgba(13, 42, 72, .58);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -359,4 +359,4 @@ footer {
   .home-content h1 {
     font-size: 2.5rem;
   }
-   }
+}
