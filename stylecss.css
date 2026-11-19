@@ -6,14 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --blue: #168bff;
-  --blue-light: #72d7ff;
-  --navy: #eaf7ff;
-  --text: #e5f4ff;
-  --muted: #b7d3e8;
-  --glass: rgba(16, 42, 73, 0.58);
-  --glass-border: rgba(105, 203, 255, 0.38);
-  --shadow: 0 12px 35px rgba(0, 145, 255, 0.16);
+  --blue: #258ee8;
+  --blue-light: #8bd5ff;
+  --navy: #eef7ff;
+  --text: #e6f2fc;
+  --muted: #b5c9dc;
+  --glass: rgba(7, 24, 43, 0.78);
+  --glass-border: rgba(116, 190, 245, 0.34);
+  --shadow: 0 16px 42px rgba(0, 0, 0, 0.22);
 }
 
 * {
@@ -28,9 +28,9 @@ body {
   color: var(--text);
   line-height: 1.7;
   background:
-    radial-gradient(circle at 12% 15%, rgba(0,145,255,.22), transparent 28%),
-    radial-gradient(circle at 85% 25%, rgba(0,198,255,.18), transparent 30%),
-    linear-gradient(135deg, #061629 0%, #0b2948 52%, #071b31 100%);
+    radial-gradient(ellipse at 78% 18%, rgba(31, 112, 190, .32), transparent 32%),
+    radial-gradient(ellipse at 12% 88%, rgba(25, 89, 151, .24), transparent 34%),
+    linear-gradient(145deg, #050d19 0%, #0b1b30 55%, #071426 100%);
   background-attachment: fixed;
   overflow-x: hidden;
 }
@@ -49,11 +49,11 @@ a {
   justify-content: space-between;
   gap: 18px;
   border: 1px solid var(--glass-border);
-  border-radius: 22px;
-  background: rgba(13, 42, 72, .62);
+  border-radius: 14px;
+  background: rgba(8, 26, 46, .82);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: var(--shadow), inset 0 0 18px rgba(80,190,255,.04);
+  box-shadow: var(--shadow);
   position: sticky;
   top: 12px;
   z-index: 20;
@@ -74,7 +74,7 @@ a {
 }
 
 .nav-links a {
-  color: #d6efff;
+  color: #d9eafa;
   font-size: .92rem;
   font-weight: 500;
   transition: color .2s ease;
@@ -94,11 +94,11 @@ a {
   justify-content: space-between;
   gap: 40px;
   border: 1px solid var(--glass-border);
-  border-radius: 32px;
+  border-radius: 18px;
   background: var(--glass);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  box-shadow: var(--shadow), inset 0 0 18px rgba(80,190,255,.04);
+  box-shadow: var(--shadow);
   overflow: hidden;
 }
 
@@ -118,6 +118,7 @@ a {
 }
 
 .home-content h1 {
+  letter-spacing: -1.5px;
   color: var(--navy);
   font-size: clamp(2.6rem, 6vw, 4.8rem);
   line-height: 1.12;
@@ -143,7 +144,7 @@ button,
 .btn {
   display: inline-block;
   border: 0;
-  border-radius: 30px;
+  border-radius: 18px;
   padding: 12px 25px;
   color: white;
   background: linear-gradient(135deg, #168bdb, #68c6ff);
@@ -167,9 +168,9 @@ button:hover,
   width: 300px;
   height: 350px;
   padding: 12px;
-  border: 1px solid rgba(105,203,255,.55);
-  border-radius: 30px;
-  background: rgba(30, 93, 140, .38);
+  border: 1px solid rgba(135, 201, 248, .5);
+  border-radius: 18px;
+  background: rgba(18, 47, 75, .58);
   box-shadow: 0 15px 35px rgba(30,110,165,.18);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -181,7 +182,7 @@ button:hover,
   display: block;
   object-fit: cover;
   object-position: center;
-  border-radius: 22px;
+  border-radius: 14px;
   /* Image stays fixed: no floating animation */
 }
 
@@ -190,14 +191,15 @@ button:hover,
   margin: 35px auto;
   padding: 55px 45px;
   border: 1px solid var(--glass-border);
-  border-radius: 30px;
-  background: rgba(13, 42, 72, .56);
+  border-radius: 18px;
+  background: rgba(9, 28, 49, .78);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: var(--shadow), inset 0 0 18px rgba(80,190,255,.04);
+  box-shadow: var(--shadow);
 }
 
 .section-title {
+  letter-spacing: .5px;
   color: var(--navy);
   font-size: clamp(2rem, 4vw, 2.7rem);
   text-align: center;
@@ -234,10 +236,10 @@ button:hover,
 .project-card,
 .education-card {
   padding: 25px;
-  border-radius: 22px;
-  border: 1px solid rgba(105,203,255,.35);
-  background: rgba(22, 65, 101, .55);
-  box-shadow: 0 8px 24px rgba(35,105,155,.10);
+  border-radius: 14px;
+  border: 1px solid rgba(135, 201, 248, .32);
+  background: rgba(17, 42, 67, .78);
+  box-shadow: 0 10px 28px rgba(0,0,0,.18);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: transform .22s ease, box-shadow .22s ease;
@@ -271,7 +273,7 @@ button:hover,
 }
 
 .dark-section {
-  background: rgba(18, 66, 105, .62);
+  background: rgba(14, 39, 66, .84);
 }
 
 .contact-content {
@@ -289,10 +291,10 @@ footer {
   margin: 30px auto 20px;
   padding: 22px;
   text-align: center;
-  color: #b7d3e8;
+  color: #b5c9dc;
   border: 1px solid var(--glass-border);
-  border-radius: 20px;
-  background: rgba(13, 42, 72, .58);
+  border-radius: 14px;
+  background: rgba(8, 26, 46, .78);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -357,9 +359,28 @@ footer {
   }
 
   .home-content h1 {
+  letter-spacing: -1.5px;
     font-size: 2.5rem;
   }
 }
+
+
+/* Elegant framed profile photo */
+.home-image {
+  border-radius: 18px;
+  border: 1px solid rgba(139, 213, 255, .55);
+  background: linear-gradient(145deg, rgba(45, 113, 166, .32), rgba(255,255,255,.04));
+  box-shadow: 0 16px 38px rgba(0, 0, 0, .28);
+  overflow: hidden;
+}
+
+.home-image img {
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center;
+  transform: none;
+  animation: none;
+   }
 
 /* Make profile picture circular */
 .home-image {
