@@ -352,32 +352,38 @@ footer {
     gap: 9px 13px;
   }
 
+  .nav-links a {
+    font-size: .82rem;
+  }
 
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+}
 
-/* FORCE CIRCLE PROFILE */
+/* Make profile picture circular */
 .home-image {
-    width: 280px !important;
-    height: 280px !important;
-    flex: 0 0 280px !important;
-    border-radius: 50% !important;
-    overflow: hidden !important;
-    padding: 0 !important;
+    width: 300px;
+    height: 300px;
+    flex: 0 0 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 8px;
 }
 
 .home-image img {
-    width: 100% !important;
-    height: 100% !important;
-    border-radius: 50% !important;
-    aspect-ratio: 1 / 1;
-    object-fit: cover !important;
-    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
 }
 
+/* Mobile size */
 @media (max-width: 760px) {
     .home-image {
-        width: 240px !important;
-        height: 240px !important;
-        flex: 0 0 240px !important;
+        width: 250px;
+        height: 250px;
+        flex: 0 0 250px;
     }
-}
-
+   }
